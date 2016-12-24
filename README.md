@@ -30,3 +30,10 @@ npm install webpack-dev-server -g
 This binds a small express server on localhost:8080 which serves your static assets as well as the bundle (compiled automatically).It automatically updates the browser page when a bundle is recompiled 
 ```
 webpack-dev-server --progress --colors
+```
+
+# reference
+
+[webpackdoc](http://webpackdoc.com/usage.html)  
+[IT笔录 / Webpack前端资源](http://itbilu.com/nodejs/npm/Vy6BnJkY-.html)   
+[webpack website](http://webpack.github.io/docs/)
