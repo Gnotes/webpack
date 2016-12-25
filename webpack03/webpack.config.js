@@ -10,12 +10,14 @@ module.exports = {
     // entry 可以为：字符串，数组，对象，其值是入口文件的 相对路径
     // output.filename ,如果entry传入的是字符串（如下）并且filename以[name]为命名规则，并且未指定filename的值，
     // 那么默认会以app为文件名，即app.js
+    // 这个多入口到底是什么？？有什么意义，还没搞定！！！
     entry: {
-      app : "./entry"
+      home:'./home/index.js',
+      login:'./login/index.js'
     },
     output: {
-        path:path.resolve(__dirname + '/dist'),
-        filename: '[name].js'
+        path:'./dist',
+        filename: '[name]/index.js'
     },
     reslove:{
         root: __dirname,
@@ -45,10 +47,10 @@ module.exports = {
     // https://www.npmjs.com/package/html-webpack-plugin
     new HtmlWebpackPlugin({
       // 生成html文件的title，template配置将覆盖此项
-      title:'webpack demo',
-      // template: __dirname + '/index.html', // html的模板文件
-      filename:'index.html' // 生成的html文件名，默认index.html
-      // inject: 'body' //将所有资源注入到模板生成文件中，true 和 body 会放在body底部，head 会防止head中
+      title:'webpack home',
+      template:'./index.html', // html的模板文件
+      filename:'index.html', // 生成的html文件名，默认index.html
+      inject: 'body' //将所有资源注入到模板生成文件中，true 和 body 会放在body底部，head 会防止head中
     }),
     // 提取公共部分的插件，name为必需值，可为字符串或字符串数组；已存在的代码块（chunk）可将其名称作为参数传入
     // filename默认与name值相同

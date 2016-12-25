@@ -1,3 +1,28 @@
+# webpack learning notes
+
+## lesson04
+配置loaders和plugins  
+
+- [using-loaders](http://webpack.github.io/docs/using-loaders.html)
+- [loaders](http://webpack.github.io/docs/loaders.html)
+- [configuration](http://webpack.github.io/docs/configuration.html)
+
+![view](./view.png)
+
+
+install all needed pages ,as below:
+```bash
+npm install
+```
+
+run this command:
+```bash
+npm run build
+```
+to create compiled files into directory 'dist'; 
+
+```js
+
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
@@ -47,7 +72,7 @@ module.exports = {
       // 生成html文件的title，template配置将覆盖此项
       title:'webpack demo',
       // template: __dirname + '/index.html', // html的模板文件
-      filename:'index.html' // 生成的html文件名，默认index.html
+      // filename：'index.html' // 生成的html文件名，默认index.html
       // inject: 'body' //将所有资源注入到模板生成文件中，true 和 body 会放在body底部，head 会防止head中
     }),
     // 提取公共部分的插件，name为必需值，可为字符串或字符串数组；已存在的代码块（chunk）可将其名称作为参数传入
@@ -66,3 +91,6 @@ module.exports = {
     })
   ]
 };
+
+
+```

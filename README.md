@@ -93,4 +93,5 @@ webpack-dev-server --progress --colors
 
 [webpackdoc](http://webpackdoc.com/usage.html)  
 [IT笔录 / Webpack前端资源](http://itbilu.com/nodejs/npm/Vy6BnJkY-.html)   
-[webpack website](http://webpack.github.io/docs/)
+[webpack website](http://webpack.github.io/docs/)   
+[Webpack 入门指迷](https://segmentfault.com/a/1190000002551952)   
