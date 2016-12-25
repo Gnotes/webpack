@@ -1,6 +1,5 @@
-# webpack learning notes
+# webpack
 
-## lesson04
 配置loaders和plugins  
 
 - [using-loaders](http://webpack.github.io/docs/using-loaders.html)
