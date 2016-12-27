@@ -29,7 +29,7 @@ module.exports = {
     entry: entries,
     output: {
       path:'./dist',
-      filename: 'js/[name].bundle.js'       // 这里的name为entry的key值,即a,b
+      filename: 'js/[name].bundle.js'       // 这里的name为entry的key值,即index,login
     },
     reslove:{
       root: __dirname,
