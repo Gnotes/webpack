@@ -9,6 +9,10 @@ module.exports = {
     // entry 可以为：字符串，数组，对象，其值是入口文件的 相对路径
     // https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9#.f0cdf0reg
     // 为数组的意思
+    // if you want to append multiple files that are NOT dependent on each other, you can use the Array format.
+    // 需要添加多个相互无依赖的模块（文件），
+    // For example: you may need “googleAnalytics.js” in your HTML. You can tell Webpack to append it to the end of the bundle.js
+    // 
     entry: [
     './index/index.js','./login/index.js'
     ],
