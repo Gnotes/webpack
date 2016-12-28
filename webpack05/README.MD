@@ -19,9 +19,6 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
 
-var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
-var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
-
 module.exports = {
     // entry 可以为：字符串，数组，对象，其值是入口文件的 相对路径
     // https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9#.f0cdf0reg
