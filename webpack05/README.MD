@@ -2,6 +2,16 @@
 
 [Webpack — The Confusing Parts](https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9#.f0cdf0reg)
 
+**multiple entry：数组模式**  
+
+`使用数组的模式是将多个相互无依赖的模块（文件），追加到一个bundle文件末尾`
+
+## 结构
+目录  
+<img src="./a.png" width="200" />   
+bundle文件  
+<img src="./b.png" />
+
 ## 配置文件
 
 ```
@@ -17,15 +27,15 @@ module.exports = {
     // https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9#.f0cdf0reg
     // 为数组的意思
     // if you want to append multiple files that are NOT dependent on each other, you can use the Array format.
-    // 需要添加多个相互无依赖的模块（文件），
-    // For example: you may need “googleAnalytics.js” in your HTML. You can tell Webpack to append it to the end of the bundle.js
-    // 
+    // 使用数组的模式是将多个相互无依赖的模块（文件），追加到一个bundle文件末尾
+    // For example: you may need ./login/index.js” in your HTML. You can tell Webpack to append it to the end of the bundle.js
+    // 如本例中添加了一个login/index.js到bundle末尾
     entry: [
     './index/index.js','./login/index.js'
     ],
     output: {
       path:'./dist',
-      filename: 'js/[name].bundle.js'       // 这里的name为entry的key值,即index,login
+      filename: 'js/[name].bundle.js'
     },
     reslove:{
       root: __dirname,
@@ -66,6 +76,4 @@ module.exports = {
       })
     ]
 };
-
-
 ```
