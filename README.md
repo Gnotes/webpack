@@ -1,101 +1,73 @@
-# webpack
+# webpack 2
 
+**Version : 2.x**
 
-## install
+## [安装webpack](https://webpack.js.org/guides/installation/)
+
+webpack 需要`node`环境，以及`npm`，具体安装详情参考原文  
+
+### 本地安装
+
+```shell
+npm install webpack
+```
+
+### 全局安装
+
+由于我们需要使用`webpack 命令`，因此使用全局安装
 
 ```bash
 npm install webpack -g
 ```
 
-## webpack CLI
-
-* add progress and colors on termial when compiling code
+* 编译时显示进度和颜色
 
 ```
 webpack --progress --colors
 ```
 
-* apply watch mode if u want to auto recompile code after every change
+* 修改文件时实时编译添加
 
 ```
 webpack --progress --colors --watch
 ```
 
-* use webpack-dev-server as a local server
+* 安装`webpack-dev-server` 作为本地服务
 
 ```
 npm install webpack-dev-server -g
 ```
 
-This binds a small express server on localhost:8080 which serves your static assets as well as the bundle (compiled automatically).It automatically updates the browser page when a bundle is recompiled 
+* 使用`webpack-dev-server` 
+
+`webpack-dev-server` 内部绑定了一个`express` 的服务，并在`localhost:8080 `启动。文件重新编译后会自动更新到服务页面.
+
 ```
 webpack-dev-server --progress --colors
 ```
 
-# loaders
+## 基本配置参数解释
 
-[Using loaders](https://webpack.github.io/docs/using-loaders.html)  
-[List of loaders](https://webpack.github.io/docs/list-of-loaders.html)
-
-按照惯例loader一般以 `xxx-loader` 的规则命名，`xxx` 表示这个 `loader` 要做的转换功能，如：`json-loader` 而在引用loader 时，可以使用全名`json-loader`，也可以使用简写形式`json` -- http://itbilu.com/nodejs/npm/Vy6BnJkY-.html
+- [基本介绍](docs/Introduction.md)
+- [入口和上下文](docs/Entry and Context.md)
 
 
-- 基础
-
-`json`: 加载 JSON 文件  
-`raw`: 加载文件原始内容(utf-8 编码)  
-`val`: 执行代码模块化，并考虑导出为JavaScript代码  
-`script`: 在全局上下文件中执行一次 JavaScript 文件(类似 script 标签)，需要不被解析  
-
-- 打包
-
-`file`: 将文件发送到指定输出目录，并返回URL(相对)  
-`url`: 类似于file加载器，如果文件小于限制值会返回一个 Data Url  
-`image`: 压缩图片。像是一起使用 file 和 url  
-`svgo-loader`: 使用svgo库压缩SVG图片  
-`baggage`: 自动引入与所需资源相关的文件  
-`polymer-loader`: 在“预处理”选择后处理 HTML & CSS 并像一级模块一样require()引入Web组件  
-
-- 语言支持
-
-`coffee`: 像加载JavaScript一样加载 coffee-script  
-`babel`: 使用Babel 将 ES6 代码转换为 ES5  
-`livescript`: 像加载JavaScript一样加载 LiveScript  
-`sweetjs`: 使用 sweetjs macros.  
-`traceur`: 通过 Traceur使用未来JavaScript的语法特性  
-`typescript`: 像加载JavaScript一样加载 TypeScript  
-
-- 模板
-
-`html`: 将HTML做为字符串导出，需要做为静态资源引用  
-`jade`: 加载 jade 模板，并返回一个函数  
-`markdown`: 将 Markdown 编译为 HTML  
-
-- 样式
-
-`style`: 添加一个DOM式的模块导出  
-`css`: 从绝对路径加载CSS文件，并返回CSS代码  
-`less`: 加载并编译一个 less 文件  
-`sass`: 加载并编译一个 scss 文件  
-`stylus`: 加载并编译一个 stylus 文件  
-
-- 混合
-
-`mocha`: 在browser 或 node.js 中使用mocha进行测试  
-`eslint`: 使用ESLint 对剥离的代码进行预加载  
-`jshint`: 预加载剥离的代码  
-`jscs`: 预加载样式检查  
-`injectable`: 允许依赖注入到模块中  
-`transform`: 使用 browserify 转换加载  
 
 
-# reference
 
-[webpackdoc](http://webpackdoc.com/usage.html)  
-[IT笔录 / Webpack前端资源](http://itbilu.com/nodejs/npm/Vy6BnJkY-.html)   
-[webpack website](http://webpack.github.io/docs/)   
-[webpack website - config](http://webpack.github.io/docs/configuration.html)    
-[List of loaders](https://webpack.github.io/docs/list-of-loaders.html)    
-[List of Plugins](http://webpack.github.io/docs/list-of-plugins.html)    
-[Webpack 入门指迷](https://segmentfault.com/a/1190000002551952)   
-[Webpack — The Confusing Parts](https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9#.f0cdf0reg)
+
+
+## reference
+
+- [webpack official website](https://webpack.js.org/)
+- [webpackdoc](http://webpackdoc.com/usage.html)  
+- [IT笔录 / Webpack前端资源](http://itbilu.com/nodejs/npm/Vy6BnJkY-.html)   
+- [webpack website](http://webpack.github.io/docs/)   
+- [webpack website - config](http://webpack.github.io/docs/configuration.html)    
+- [List of loaders](https://webpack.github.io/docs/list-of-loaders.html)    
+- [List of Plugins](http://webpack.github.io/docs/list-of-plugins.html)    
+- [Webpack 入门指迷](https://segmentfault.com/a/1190000002551952)   
+- [Webpack — The Confusing Parts](https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9#.f0cdf0reg)  
+- [webpack入坑之旅](http://blog.guowenfh.com/2016/03/24/vue-webpack-01-base/)
+- [Webpack2 升级指南和特性摘要](https://segmentfault.com/a/1190000008181955)
+- [webpack2.x基础属性讲解](http://www.bubuko.com/infodetail-2007986.html)

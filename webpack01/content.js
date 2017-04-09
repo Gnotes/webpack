@@ -1,1 +1,0 @@
-module.exports = "and this string output from a content.js"
