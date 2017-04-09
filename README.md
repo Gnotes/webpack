@@ -49,17 +49,13 @@ webpack-dev-server --progress --colors
 ## 基本配置参数解释
 
 - [基本介绍](docs/Introduction.md)
-- [入口和上下文](docs/Entry&Context.md)
-
-
-
-
-
-
+- [Entry&Context](docs/Entry&Context.md)
+- [Output](docs/Output.md)
 
 ## reference
 
-- [webpack official website](https://webpack.js.org/)
+- [webpack official website](https://webpack.js.org/)  
+- [webpack 中文官方文档](https://doc.webpack-china.org/)  
 - [webpackdoc](http://webpackdoc.com/usage.html)  
 - [IT笔录 / Webpack前端资源](http://itbilu.com/nodejs/npm/Vy6BnJkY-.html)   
 - [webpack website](http://webpack.github.io/docs/)   
