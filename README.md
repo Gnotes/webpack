@@ -51,6 +51,7 @@ webpack-dev-server --progress --colors
 - [基本介绍](docs/Introduction.md)
 - [Entry&Context](docs/Entry&Context.md)
 - [Output](docs/Output.md)
+- [Module](docs/Module.md)
 
 ## reference
 
