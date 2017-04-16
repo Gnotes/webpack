@@ -1,4 +1,4 @@
-# 开发工具项
+# [开发工具项](https://doc.webpack-china.org/configuration/devtool/)
 
 此选项控制是否生成，以及如何生成 `Source Map`  
 
@@ -16,3 +16,6 @@
 | eval-source-map | -- | + | no | 原始源码 | 
 | source-map | -- | -- | yes | 原始源码 | 
 | nosources-source-map | -- | -- | yes | 无源码内容 | 
+
+>  + 表示较快，- 表示较慢，o 表示时间相同
+
