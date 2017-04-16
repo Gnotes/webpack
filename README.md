@@ -52,6 +52,11 @@ webpack-dev-server --progress --colors
 - [Entry&Context](docs/Entry&Context.md)
 - [Output](docs/Output.md)
 - [Module](docs/Module.md)
+- [Resolve](docs/Resolve.md)
+- [Plugins](docs/Plugins.md)
+- [DevServer](docs/DevServer.md)
+- [Devtool](docs/Devtool.md)
+- [Externals](docs/Externals.md)
 
 ## reference
 
