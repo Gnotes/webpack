@@ -64,6 +64,8 @@ webpack-dev-server --progress --colors
 - [webpack 中文官方文档](https://doc.webpack-china.org/)  
 - [webpackdoc](http://webpackdoc.com/usage.html)  
 - [IT笔录 / Webpack前端资源](http://itbilu.com/nodejs/npm/Vy6BnJkY-.html)   
+- [Github Webpack](https://github.com/webpack/webpack)   
+- [Github Webpack-dev-server](https://github.com/webpack/webpack-dev-server)   
 - [webpack website](http://webpack.github.io/docs/)   
 - [webpack website - config](http://webpack.github.io/docs/configuration.html)    
 - [List of loaders](https://webpack.github.io/docs/list-of-loaders.html)    
